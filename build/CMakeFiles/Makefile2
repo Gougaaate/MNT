@@ -81,12 +81,12 @@ clean: CMakeFiles/create_raster.dir/clean
 CMakeFiles/create_raster.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adam/Documents/C++/MNT/build/CMakeFiles --progress-num=1,2,3 "Built target create_raster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adam/Documents/C++/MNT/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target create_raster"
 .PHONY : CMakeFiles/create_raster.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/create_raster.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/Documents/C++/MNT/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/Documents/C++/MNT/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/create_raster.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adam/Documents/C++/MNT/build/CMakeFiles 0
 .PHONY : CMakeFiles/create_raster.dir/rule

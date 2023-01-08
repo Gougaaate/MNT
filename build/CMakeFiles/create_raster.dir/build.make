@@ -97,19 +97,67 @@ CMakeFiles/create_raster.dir/src/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/create_raster.dir/src/Point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/C++/MNT/src/Point.cpp -o CMakeFiles/create_raster.dir/src/Point.cpp.s
 
+CMakeFiles/create_raster.dir/src/projection.cpp.o: CMakeFiles/create_raster.dir/flags.make
+CMakeFiles/create_raster.dir/src/projection.cpp.o: ../src/projection.cpp
+CMakeFiles/create_raster.dir/src/projection.cpp.o: CMakeFiles/create_raster.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adam/Documents/C++/MNT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/create_raster.dir/src/projection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/create_raster.dir/src/projection.cpp.o -MF CMakeFiles/create_raster.dir/src/projection.cpp.o.d -o CMakeFiles/create_raster.dir/src/projection.cpp.o -c /home/adam/Documents/C++/MNT/src/projection.cpp
+
+CMakeFiles/create_raster.dir/src/projection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/create_raster.dir/src/projection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/C++/MNT/src/projection.cpp > CMakeFiles/create_raster.dir/src/projection.cpp.i
+
+CMakeFiles/create_raster.dir/src/projection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/create_raster.dir/src/projection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/C++/MNT/src/projection.cpp -o CMakeFiles/create_raster.dir/src/projection.cpp.s
+
+CMakeFiles/create_raster.dir/src/tree.cpp.o: CMakeFiles/create_raster.dir/flags.make
+CMakeFiles/create_raster.dir/src/tree.cpp.o: ../src/tree.cpp
+CMakeFiles/create_raster.dir/src/tree.cpp.o: CMakeFiles/create_raster.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adam/Documents/C++/MNT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/create_raster.dir/src/tree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/create_raster.dir/src/tree.cpp.o -MF CMakeFiles/create_raster.dir/src/tree.cpp.o.d -o CMakeFiles/create_raster.dir/src/tree.cpp.o -c /home/adam/Documents/C++/MNT/src/tree.cpp
+
+CMakeFiles/create_raster.dir/src/tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/create_raster.dir/src/tree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/C++/MNT/src/tree.cpp > CMakeFiles/create_raster.dir/src/tree.cpp.i
+
+CMakeFiles/create_raster.dir/src/tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/create_raster.dir/src/tree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/C++/MNT/src/tree.cpp -o CMakeFiles/create_raster.dir/src/tree.cpp.s
+
+CMakeFiles/create_raster.dir/src/hillshading.cpp.o: CMakeFiles/create_raster.dir/flags.make
+CMakeFiles/create_raster.dir/src/hillshading.cpp.o: ../src/hillshading.cpp
+CMakeFiles/create_raster.dir/src/hillshading.cpp.o: CMakeFiles/create_raster.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adam/Documents/C++/MNT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/create_raster.dir/src/hillshading.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/create_raster.dir/src/hillshading.cpp.o -MF CMakeFiles/create_raster.dir/src/hillshading.cpp.o.d -o CMakeFiles/create_raster.dir/src/hillshading.cpp.o -c /home/adam/Documents/C++/MNT/src/hillshading.cpp
+
+CMakeFiles/create_raster.dir/src/hillshading.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/create_raster.dir/src/hillshading.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adam/Documents/C++/MNT/src/hillshading.cpp > CMakeFiles/create_raster.dir/src/hillshading.cpp.i
+
+CMakeFiles/create_raster.dir/src/hillshading.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/create_raster.dir/src/hillshading.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adam/Documents/C++/MNT/src/hillshading.cpp -o CMakeFiles/create_raster.dir/src/hillshading.cpp.s
+
 # Object files for target create_raster
 create_raster_OBJECTS = \
 "CMakeFiles/create_raster.dir/src/main.cpp.o" \
-"CMakeFiles/create_raster.dir/src/Point.cpp.o"
+"CMakeFiles/create_raster.dir/src/Point.cpp.o" \
+"CMakeFiles/create_raster.dir/src/projection.cpp.o" \
+"CMakeFiles/create_raster.dir/src/tree.cpp.o" \
+"CMakeFiles/create_raster.dir/src/hillshading.cpp.o"
 
 # External object files for target create_raster
 create_raster_EXTERNAL_OBJECTS =
 
 create_raster: CMakeFiles/create_raster.dir/src/main.cpp.o
 create_raster: CMakeFiles/create_raster.dir/src/Point.cpp.o
+create_raster: CMakeFiles/create_raster.dir/src/projection.cpp.o
+create_raster: CMakeFiles/create_raster.dir/src/tree.cpp.o
+create_raster: CMakeFiles/create_raster.dir/src/hillshading.cpp.o
 create_raster: CMakeFiles/create_raster.dir/build.make
 create_raster: CMakeFiles/create_raster.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adam/Documents/C++/MNT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable create_raster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adam/Documents/C++/MNT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable create_raster"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/create_raster.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

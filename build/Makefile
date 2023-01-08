@@ -153,6 +153,30 @@ src/Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/Point.cpp.s
 .PHONY : src/Point.cpp.s
 
+src/hillshading.o: src/hillshading.cpp.o
+.PHONY : src/hillshading.o
+
+# target to build an object file
+src/hillshading.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/hillshading.cpp.o
+.PHONY : src/hillshading.cpp.o
+
+src/hillshading.i: src/hillshading.cpp.i
+.PHONY : src/hillshading.i
+
+# target to preprocess a source file
+src/hillshading.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/hillshading.cpp.i
+.PHONY : src/hillshading.cpp.i
+
+src/hillshading.s: src/hillshading.cpp.s
+.PHONY : src/hillshading.s
+
+# target to generate assembly for a file
+src/hillshading.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/hillshading.cpp.s
+.PHONY : src/hillshading.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -177,6 +201,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/projection.o: src/projection.cpp.o
+.PHONY : src/projection.o
+
+# target to build an object file
+src/projection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/projection.cpp.o
+.PHONY : src/projection.cpp.o
+
+src/projection.i: src/projection.cpp.i
+.PHONY : src/projection.i
+
+# target to preprocess a source file
+src/projection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/projection.cpp.i
+.PHONY : src/projection.cpp.i
+
+src/projection.s: src/projection.cpp.s
+.PHONY : src/projection.s
+
+# target to generate assembly for a file
+src/projection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/projection.cpp.s
+.PHONY : src/projection.cpp.s
+
+src/tree.o: src/tree.cpp.o
+.PHONY : src/tree.o
+
+# target to build an object file
+src/tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/tree.cpp.o
+.PHONY : src/tree.cpp.o
+
+src/tree.i: src/tree.cpp.i
+.PHONY : src/tree.i
+
+# target to preprocess a source file
+src/tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/tree.cpp.i
+.PHONY : src/tree.cpp.i
+
+src/tree.s: src/tree.cpp.s
+.PHONY : src/tree.s
+
+# target to generate assembly for a file
+src/tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/tree.cpp.s
+.PHONY : src/tree.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +261,18 @@ help:
 	@echo "... src/Point.o"
 	@echo "... src/Point.i"
 	@echo "... src/Point.s"
+	@echo "... src/hillshading.o"
+	@echo "... src/hillshading.i"
+	@echo "... src/hillshading.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/projection.o"
+	@echo "... src/projection.i"
+	@echo "... src/projection.s"
+	@echo "... src/tree.o"
+	@echo "... src/tree.i"
+	@echo "... src/tree.s"
 .PHONY : help
 
 
