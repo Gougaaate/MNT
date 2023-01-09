@@ -177,5 +177,6 @@ CMakeFiles/create_raster.dir/src/main.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
- /home/adam/Documents/C++/MNT/src/Point.h \
- /home/adam/Documents/C++/MNT/src/projection.h
+ /home/adam/Documents/C++/MNT/src/Point.hpp \
+ /home/adam/Documents/C++/MNT/src/projection.hpp \
+ /home/adam/Documents/C++/MNT/src/hillshading.hpp

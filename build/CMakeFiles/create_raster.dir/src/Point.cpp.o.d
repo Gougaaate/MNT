@@ -1,6 +1,6 @@
 CMakeFiles/create_raster.dir/src/Point.cpp.o: \
  /home/adam/Documents/C++/MNT/src/Point.cpp /usr/include/stdc-predef.h \
- /home/adam/Documents/C++/MNT/src/Point.h /usr/include/c++/9/cmath \
+ /home/adam/Documents/C++/MNT/src/Point.hpp /usr/include/c++/9/cmath \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
