@@ -5,12 +5,18 @@ project(create_raster)
 set(SOURCES
         src/main.cpp
         src/Point.cpp
+        src/projection.cpp
+        src/hillshading.cpp
+        src/display.cpp
         )
 
 # Add header files
 set(HEADERS
-        src/Point.h
+        src/Point.hpp
         src/delaunator.hpp
+        src/hillshading.hpp
+        src/projection.hpp
+        src/display.hpp
         )
 
 # Add executable

@@ -179,4 +179,5 @@ CMakeFiles/create_raster.dir/src/main.cpp.o: \
  /usr/include/c++/9/backward/auto_ptr.h \
  /home/adam/Documents/C++/MNT/src/Point.hpp \
  /home/adam/Documents/C++/MNT/src/projection.hpp \
- /home/adam/Documents/C++/MNT/src/hillshading.hpp
+ /home/adam/Documents/C++/MNT/src/hillshading.hpp \
+ /home/adam/Documents/C++/MNT/src/display.hpp

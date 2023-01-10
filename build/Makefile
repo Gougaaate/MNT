@@ -153,6 +153,30 @@ src/Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/Point.cpp.s
 .PHONY : src/Point.cpp.s
 
+src/display.o: src/display.cpp.o
+.PHONY : src/display.o
+
+# target to build an object file
+src/display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/display.cpp.o
+.PHONY : src/display.cpp.o
+
+src/display.i: src/display.cpp.i
+.PHONY : src/display.i
+
+# target to preprocess a source file
+src/display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/display.cpp.i
+.PHONY : src/display.cpp.i
+
+src/display.s: src/display.cpp.s
+.PHONY : src/display.s
+
+# target to generate assembly for a file
+src/display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/display.cpp.s
+.PHONY : src/display.cpp.s
+
 src/hillshading.o: src/hillshading.cpp.o
 .PHONY : src/hillshading.o
 
@@ -225,30 +249,6 @@ src/projection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/projection.cpp.s
 .PHONY : src/projection.cpp.s
 
-src/tree.o: src/tree.cpp.o
-.PHONY : src/tree.o
-
-# target to build an object file
-src/tree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/tree.cpp.o
-.PHONY : src/tree.cpp.o
-
-src/tree.i: src/tree.cpp.i
-.PHONY : src/tree.i
-
-# target to preprocess a source file
-src/tree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/tree.cpp.i
-.PHONY : src/tree.cpp.i
-
-src/tree.s: src/tree.cpp.s
-.PHONY : src/tree.s
-
-# target to generate assembly for a file
-src/tree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/create_raster.dir/build.make CMakeFiles/create_raster.dir/src/tree.cpp.s
-.PHONY : src/tree.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -261,6 +261,9 @@ help:
 	@echo "... src/Point.o"
 	@echo "... src/Point.i"
 	@echo "... src/Point.s"
+	@echo "... src/display.o"
+	@echo "... src/display.i"
+	@echo "... src/display.s"
 	@echo "... src/hillshading.o"
 	@echo "... src/hillshading.i"
 	@echo "... src/hillshading.s"
@@ -270,9 +273,6 @@ help:
 	@echo "... src/projection.o"
 	@echo "... src/projection.i"
 	@echo "... src/projection.s"
-	@echo "... src/tree.o"
-	@echo "... src/tree.i"
-	@echo "... src/tree.s"
 .PHONY : help
 
 
