@@ -67,14 +67,14 @@ build CMakeFiles/create_raster.dir/src/projection.cpp.o: CXX_COMPILER__create_ra
   OBJECT_DIR = CMakeFiles/create_raster.dir
   OBJECT_FILE_DIR = CMakeFiles/create_raster.dir/src
 
-build CMakeFiles/create_raster.dir/src/tree.cpp.o: CXX_COMPILER__create_raster_Debug /home/adam/Documents/C++/MNT/src/tree.cpp || cmake_object_order_depends_target_create_raster
-  DEP_FILE = CMakeFiles/create_raster.dir/src/tree.cpp.o.d
+build CMakeFiles/create_raster.dir/src/hillshading.cpp.o: CXX_COMPILER__create_raster_Debug /home/adam/Documents/C++/MNT/src/hillshading.cpp || cmake_object_order_depends_target_create_raster
+  DEP_FILE = CMakeFiles/create_raster.dir/src/hillshading.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/create_raster.dir
   OBJECT_FILE_DIR = CMakeFiles/create_raster.dir/src
 
-build CMakeFiles/create_raster.dir/src/hillshading.cpp.o: CXX_COMPILER__create_raster_Debug /home/adam/Documents/C++/MNT/src/hillshading.cpp || cmake_object_order_depends_target_create_raster
-  DEP_FILE = CMakeFiles/create_raster.dir/src/hillshading.cpp.o.d
+build CMakeFiles/create_raster.dir/src/display.cpp.o: CXX_COMPILER__create_raster_Debug /home/adam/Documents/C++/MNT/src/display.cpp || cmake_object_order_depends_target_create_raster
+  DEP_FILE = CMakeFiles/create_raster.dir/src/display.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/create_raster.dir
   OBJECT_FILE_DIR = CMakeFiles/create_raster.dir/src
@@ -87,7 +87,7 @@ build CMakeFiles/create_raster.dir/src/hillshading.cpp.o: CXX_COMPILER__create_r
 #############################################
 # Link the executable create_raster
 
-build create_raster: CXX_EXECUTABLE_LINKER__create_raster_Debug CMakeFiles/create_raster.dir/src/main.cpp.o CMakeFiles/create_raster.dir/src/Point.cpp.o CMakeFiles/create_raster.dir/src/projection.cpp.o CMakeFiles/create_raster.dir/src/tree.cpp.o CMakeFiles/create_raster.dir/src/hillshading.cpp.o
+build create_raster: CXX_EXECUTABLE_LINKER__create_raster_Debug CMakeFiles/create_raster.dir/src/main.cpp.o CMakeFiles/create_raster.dir/src/Point.cpp.o CMakeFiles/create_raster.dir/src/projection.cpp.o CMakeFiles/create_raster.dir/src/hillshading.cpp.o CMakeFiles/create_raster.dir/src/display.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -lproj
   OBJECT_DIR = CMakeFiles/create_raster.dir

@@ -52,42 +52,39 @@ std::vector<std::vector<double>> hillshading(const std::vector<std::vector<doubl
             double h = pixelVector[i][j+1];
             double k = pixelVector[i+1][j+1];        // Not i because of the for (int i = ...)
 
-            double dz_dx = ((c+k+(2*f))-(a+g+(2*d)))/(8 * pixelWidth);         // Derivatives
-            double dz_dy = ((g+k+(2*h))-(a+c+(2*b)))/(8 * pixelHeight);
-
-            double slopeRad = atan(e*sqrt((dz_dx*dz_dx)+(dz_dy*dz_dy)));
-            double aspect_rad;
-
+//            a = 2450, b = 2461, c = 2483, d = 2452, e = 2461, f = 2483, g = 2447, h = 2455, k = 2477;
+            double dz_dx = ((c+k+(2*f))-(a+g+(2*d)))/(8 * 5);         // Derivatives
+            double dz_dy = ((g+k+(2*h))-(a+c+(2*b)))/(8 * 5);
+            double slopeRad = atan(sqrt((dz_dx*dz_dx)+(dz_dy*dz_dy)));
+            double aspectRad;
             if (dz_dx!=0)
             {
-                aspect_rad = atan2(dz_dy,-1*dz_dx);
-                if(aspect_rad<0)                                        // Modulo 2pi to avoid negative values
-                    aspect_rad = 2*M_PI + aspect_rad;
+                aspectRad = atan2(dz_dy,-1*dz_dx);
+                if(aspectRad<0)                                        // Modulo 2pi to avoid negative values
+                    aspectRad = 2*M_PI + aspectRad;
             }
             else                // Indexing conditions (from the "how does Hillshading work" website)
             {
                 if (dz_dy>0)
-                    aspect_rad = M_PI/2;
+                    aspectRad = M_PI/2;
                 else
                 {
                     if (dz_dy<0)
-                        aspect_rad = 2*M_PI - (M_PI/2);
+                        aspectRad = 2*M_PI - (M_PI/2);
                     else
-                        aspect_rad = 0;
+                        aspectRad = 0;
                 }
             }
-            pixelShading[i][j] = 255.0 * ((cos(zenithRad) * cos(slopeRad)) + (sin(zenithRad) * sin(slopeRad) * cos(azimuthRad - aspect_rad)));      // Shading factor
-
-            if (pixelShading[i][j]<0)           // Indexing
+            pixelShading[i][j] = 255.0 * ((cos(zenithRad) * cos(slopeRad)) + (sin(zenithRad) * sin(slopeRad) * cos(azimuthRad - aspectRad)));      // Shading factor
+            if (pixelShading[i][j] < 0)           // Indexing
                 pixelShading[i][j] = 0;
-            if (pixelShading[i][j]>255)
+            if (pixelShading[i][j] > 255)
                 pixelShading[i][j] = 255;
             count ++;
-            if (count % 500 == 0)                                       // Displaying the status
+            if (count % 500 == 0)                                    // Displaying the status
                 displayProgress(100*count/((height-1)*(width-1)));
         }
     }
     return pixelShading;
 }
-
 #endif
