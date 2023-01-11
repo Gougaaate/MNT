@@ -52,37 +52,37 @@ std::vector<std::vector<double>> hillshading(const std::vector<std::vector<doubl
             double h = pixelVector[i][j+1];
             double k = pixelVector[i+1][j+1];        // Not i because of the for (int i = ...)
 
-//            a = 2450, b = 2461, c = 2483, d = 2452, e = 2461, f = 2483, g = 2447, h = 2455, k = 2477;
-            double dz_dx = ((c+k+(2*f))-(a+g+(2*d)))/(8 * 5);         // Derivatives
-            double dz_dy = ((g+k+(2*h))-(a+c+(2*b)))/(8 * 5);
+            double dz_dx = ((c+k+(2*f))-(a+g+(2*d)))/(8 * pixelHeight);         // Derivatives
+            double dz_dy = ((g+k+(2*h))-(a+c+(2*b)))/(8 * pixelWidth);
             double slopeRad = atan(sqrt((dz_dx*dz_dx)+(dz_dy*dz_dy)));
             double aspectRad;
-            if (dz_dx!=0)
+
+            if (dz_dx != 0)             // Indexing conditions (from the "how does Hillshading work" website)
             {
-                aspectRad = atan2(dz_dy,-1*dz_dx);
-                if(aspectRad<0)                                        // Modulo 2pi to avoid negative values
+                aspectRad = atan2(dz_dy, -dz_dx);
+                if(aspectRad < 0)                                        // Modulo 2pi to avoid negative values
                     aspectRad = 2*M_PI + aspectRad;
             }
-            else                // Indexing conditions (from the "how does Hillshading work" website)
+            else
             {
-                if (dz_dy>0)
+                if (dz_dy > 0)
                     aspectRad = M_PI/2;
                 else
                 {
-                    if (dz_dy<0)
+                    if (dz_dy < 0)
                         aspectRad = 2*M_PI - (M_PI/2);
                     else
                         aspectRad = 0;
                 }
             }
-            pixelShading[i][j] = 255.0 * ((cos(zenithRad) * cos(slopeRad)) + (sin(zenithRad) * sin(slopeRad) * cos(azimuthRad - aspectRad)));      // Shading factor
+            pixelShading[i][j] = 255.0 * ((cos(zenithRad) * cos(slopeRad)) + (sin(zenithRad) * sin(slopeRad) * cos(azimuthRad - aspectRad)));      // Shading factor used in the main.cpp
             if (pixelShading[i][j] < 0)           // Indexing
                 pixelShading[i][j] = 0;
             if (pixelShading[i][j] > 255)
                 pixelShading[i][j] = 255;
             count ++;
             if (count % 500 == 0)                                    // Displaying the status
-                displayProgress(100*count/((height-1)*(width-1)));
+                displayProgress(100 * count/((height-1)*(width-1)));
         }
     }
     return pixelShading;
