@@ -1,3 +1,0 @@
-/home/adam/Documents/C++/MNT/cmake-build-debug/CMakeFiles/create_raster.dir
-/home/adam/Documents/C++/MNT/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/adam/Documents/C++/MNT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
