@@ -2,5 +2,6 @@ src/html
 src/footer
 src/header
 src/latex
-/build
+build
 data/Guerledan.txt
+cmake-build-debug
