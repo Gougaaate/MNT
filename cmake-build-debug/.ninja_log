@@ -1,8 +1,0 @@
-# ninja log v5
-818	917	1673355723684615481	create_raster	a4921217de48cb58
-1	39	1673357226084516967	build.ninja	5c905aa8163a1de6
-60	283	1673355723048603531	CMakeFiles/create_raster.dir/src/display.cpp.o	7b3c4a0554a4ce5a
-0	817	1673355723584613602	CMakeFiles/create_raster.dir/src/main.cpp.o	f6c44d9d2e6915c1
-1	341	1673355723108604658	CMakeFiles/create_raster.dir/src/hillshading.cpp.o	538752413a754c23
-0	60	1673355722824599314	CMakeFiles/create_raster.dir/src/Point.cpp.o	9bf806bcd02919c2
-0	299	1673355723064603831	CMakeFiles/create_raster.dir/src/projection.cpp.o	259697634720bc2d
