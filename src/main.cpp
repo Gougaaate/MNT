@@ -253,6 +253,8 @@ int main(int argc, char *argv[])
         double y;
         double depth;
 
+        std::cout << "Collecting data..." << std::endl;
+
         for (int j = 0; j < 2681711; j++) {
             f >> x >> y >> depth;             // Stop the double when it finds a blank or a \n
             xGPS.push_back(x);
