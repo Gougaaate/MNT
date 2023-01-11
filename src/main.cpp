@@ -91,7 +91,7 @@ bool is_point_in_triangle(double x, double y, double x1, double y1, double x2, d
 }                                                                        // and it returns true. Else it returns false
 
 /**
- * @brief Create a matrix of pixels from delaunay triangles and depth data
+ * @brief Create a matrix of pixels from delaunay triangles and depth vector.
  * @param d Delaunator object created by Delaunator library
  * @param depth vector of depth data
  * @param myMap map containing Point and depth values
@@ -100,7 +100,7 @@ bool is_point_in_triangle(double x, double y, double x1, double y1, double x2, d
  * @param max_x max x value
  * @param max_y max y value
  *
- * The function takes a delaunator object and depth data, as well as a map containing Point and depth values,
+ * The function takes a delaunator object and depth vector, as well as a map binding Point and depth values,
  * two integers specifying the height and width of the image and two double max_x and max_y.
  * It creates a 2D vector containing the depth values for each pixel of the image.
  * It applies a linear transformation to the depths and calculates the real dimension of the pixels.
@@ -150,6 +150,7 @@ std::vector<std::vector<double>> create_pixels(const delaunator::Delaunator &d, 
 
                 for (int w = std::max(0, (int) floor((minimum_y - 1) * width / max_y) - 1); w < std::min((double) width, floor((maximum_y + 1) * width / max_y) + 1); w++) {                   // Only the pixels around the triangle
                     for (int l = std::max(0, (int) floor((minimum_x - 1) * height / max_x) - 1); l < std::min((double) height, floor((maximum_x + 1) * height / max_x) + 1); l++) {            // Didn't find any shorter way
+
                         Point pixel((l + 0.5) * pixelHeight, (w + 0.5) * pixelWidth);                                   // Modeling a pixel by a point
                         bool isInTriangle = is_point_in_triangle(pixel.getX(), pixel.getY(), x1, y1, x2, y2, x3, y3);
 
@@ -248,7 +249,6 @@ int main(int argc, char *argv[])
 
     else {
         std::vector<double> xGPS, yGPS, depthVector;       // Contains every x,y gps coordinate, and every depth
-
         double x;
         double y;
         double depth;

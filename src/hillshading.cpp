@@ -46,7 +46,7 @@ std::vector<std::vector<double>> hillshading(const std::vector<std::vector<doubl
             double b = pixelVector[i][j-1];
             double c = pixelVector[i+1][j-1];
             double d = pixelVector[i-1][j];
-            double e = pixelVector[i][j];
+            double e = pixelVector[i][j];               // It was too ugly not to put a letter e, even if it is unused
             double f = pixelVector[i+1][j];
             double g = pixelVector[i-1][j+1];
             double h = pixelVector[i][j+1];
