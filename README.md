@@ -6,10 +6,10 @@ To use this project, you will need to provide a list of GPS coordinates and thei
 
 ## Copy code
 Execute the build.sh file, or use this command :
-    $ mkdir build; cd build; cmake ..; make
+    ```$ mkdir build; cd build; cmake ..; make```
 The resulting PPM image will be saved in the same directory as the input file, with the 'MNT.ppm'.
 To generate it : 
-    $ ./create_raster *nameOfYourDataFile* *number of pixels*
+    ```$ ./create_raster *nameOfYourDataFile* *number of pixels*```
 
 ## Input Format
 The input file should be a plain text file, with one coordinate-depth pair per line. The coordinates should be in latitude and longitude, and the depth should be in meters. The values should be separated by a space.
