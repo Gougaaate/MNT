@@ -6,11 +6,11 @@ To use this project, you will need to provide a list of GPS coordinates and thei
 
 ## Copy code
 Execute the build.sh file, or use this command :
-    ```console
+    ```shell
     $ mkdir build; cd build; cmake ..; make```
 The resulting PPM image will be saved in the same directory as the input file, with the 'MNT.ppm'.
 To generate it : 
-    ```console
+    ```shell
     $ ./create_raster *nameOfYourDataFile* *number of pixels*
     ```
 
