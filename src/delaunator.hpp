@@ -1,6 +1,7 @@
 
 /*
-This file can be find in this git repository : https://github.com/delfrrr/delaunator-cpp
+This file come from this git repository : https://github.com/delfrrr/delaunator-cpp
+I am not the author of this algorithm, I only used it for optimisation purposes
 */
 
 
