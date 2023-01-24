@@ -25,6 +25,7 @@ $ ./create_raster data 1000
 The input file should be a plain text file, with one coordinate-depth pair per line. The coordinates should be in latitude and longitude, and the depth should be in meters. The values should be separated by a space.
 
 ## Source file required
+A .txt file containing values separated by a blank :
 latitude longitude depth   (GPS coordinates Lambert93)
 latitude longitude depth
 ...
@@ -32,6 +33,6 @@ latitude longitude depth
 The output image will be a PPM file, which can be opened with most image viewers. The colors of the image will represent the depths of the coordinates, with darker colors representing deeper depths.
 
 ## Dependencies
-This project requires the proj.h library for coordinate projection, and the C++ standard library for input/output and image generation.
+This project requires the proj.h library for coordinate projection, the delaunator.hpp header to triangulate the image, and the C++ standard library for input/output and image generation.
 You also need cmake to compile the project with the code line. Else, use g++.
 
