@@ -1,3 +1,10 @@
+
+/*
+This file can be find in this git repository : https://github.com/delfrrr/delaunator-cpp
+*/
+
+
+
 #pragma once
 
 #include <algorithm>
