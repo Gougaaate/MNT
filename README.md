@@ -13,7 +13,11 @@ The resulting PPM image will be saved in the same directory as the input file, w
 To generate it : 
 
    
-    $ ./create_raster *nameOfYourDataFile* *number of pixels*
+    $ ./create_raster *nameOfYourTxtFile* *pixel width*
+    
+Note : if the file name is "data.txt", type only 
+```$ ./create_raster data 1000
+```
   
 
 ## Input Format
