@@ -15,8 +15,9 @@ To generate it :
    
     $ ./create_raster *nameOfYourTxtFile* *pixel width*
     
-Note : if the file name is "data.txt", type only 
-```$ ./create_raster data 1000
+Note : if the file name is "data.txt", type only :
+```console
+$ ./create_raster data 1000
 ```
   
 
